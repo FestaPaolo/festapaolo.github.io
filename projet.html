@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <meta charset="utf-8">
+            <title>Ma page projet NSI - Python</title>
+            <link href="Styles/style2.css" rel="stylesheet" type="text/css">
+    </head>
+
+    <body>
+        <main>
+            <header class="main-content">
+                <div class="main-content-flex">
+                <div class="main-content-text">
+                    <h1>Projet NSI</h1>
+                </div>
+            </div>
+            <div class="main-content-img"></div>
+            </header>
+            <p>Ce projet a pour but de créer un programme python qui dois tracer un tapis de Sierpinski grâce à Turtle. Le programme que j'ai écrit est séparé en quatre fonctions:</p>
+            <ul>
+                <li>Une fonction 'dessiner' qui défini les actions que Turtle dois faire à la rencontre de chaque caractères de la chaîne de caractère dont je parlerais ensuite. Cela signifie que lorsque le programme rencontre un + il tourne à gauche et lorsqu'il rencontre un - il tourne à droite. S'il rencontre un F et un G il avance.</li>
+                <li>Une fonction 'sierpinski' qui défini en quel autres caractères chaque caractère de la chaîne va se transformer. La fonction dit donc que chaque F sera remplacé par F-G+F+G-F et que chaque G sera remplacé par GG</li>
+                <li>Une fonction 'courbeSier' qui défini par la variable niter le nombre de fois que le programme devra se répeter</li>
+                <li>Une fonction 'tapis'</li>
+            </ul>
+            <p>La chaîne de caractère, dont je parlais avant, sert à définir le chemin que dois suivre Turtle et en incrémentant cette chaîne le chemin se répète de plus en plus de fois de façon toujours plus grande. Dans le programme on retrouve ensuite les variables longueur, angle et niter qu'on défini au préalable afin que Turtle avance de la longueur qu'on veut, tourne de l'angle qu'on veut et répete le programme le nombre de fois qu'on désir/incrémente la chaîne de caractères le nombre de fois qu'on veut.</p>
+            <p>Afin de réaliser ce programme j'ai repri le programme de la règle de Koch et je l'ai modifié afin qu'au lieu de faire un flocon il fasse un tapis de Sierpinski. Pour faire cela, j'ai modifié les chaîne de caractères afin qu'elle coïncide avec l'énoncé. Notons que pour cela il fallait rajouter un elif à la fonction Sierpinski.</p>
+            <p>Ci-dessous, un exemple de tapis de Sierpinski, à noter que le programme permet de faire une figure à base de triangle et que dans l'image la figure est à base de carrés.</p>
+            <img src="Ceci_est_un_dossier/carre.png" alt="carré de Sierpinski">
+        </main>
+        <footer>
+            <h3>Télechargez le programme ci-dessous:</h3>
+            <p>Téléchargement gratuit à disposition de tous</p>
+            <p><a href="Ceci_est_un_dossier/TP_FESTA_Paolo.py" class="btn" download>Télécharger le programme</a></p>
+            <p><a href="index.html" class="btn">Revenir à la page d'accueil</a></p>
+            <a href="#top" class="btn">
+            Haut de page
+            </a>
+        
+        </footer>
+    </body>
+</html>
